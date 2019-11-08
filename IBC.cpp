@@ -7,6 +7,8 @@
 #include "Arduino.h"
 #include "IBC.h"
 
+morse_setup(13, 250, 1000);
+
 void dot()
 {
   digitalWrite(__pin, HIGH);
