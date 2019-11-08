@@ -1,15 +1,16 @@
 #include <IBC.h>
 
-Morse morse(13);
+morse_setup(13, 250, 1000);
 
 void setup()
 {
+  pinMode(13, OUTPUT);
 }
 
 void loop()
 {
-  morse.dot(); morse.dot(); morse.dot();
-  morse.dash(); morse.dash(); morse.dash();
-  morse.dot(); morse.dot(); morse.dot();
+  dot(); dot(); dot();
+  dash(); dash(); dash();
+  dot(); dot(); dot();
   delay(3000);
 }
