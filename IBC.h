@@ -9,14 +9,6 @@
 
 #include "Arduino.h"
 
-class Morse
-{
-  public:
-    Morse(int pin);
-    void dot();
-    void dash();
-  private:
-    int _pin;
-};
+#define morse_setup(_pin, _pause, _longpause) int _pin_ = _pin, _pause_ = _pause, _longpause_ = _longpause
 
 #endif
