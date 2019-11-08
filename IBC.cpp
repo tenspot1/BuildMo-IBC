@@ -9,16 +9,16 @@
 
 void dot()
 {
-  digitalWrite(_pin_, HIGH);
-  delay(_pause_);
-  digitalWrite(_pin_, LOW);
-  delay(_pause_);  
+  digitalWrite(__pin, HIGH);
+  delay(__pause);
+  digitalWrite(__pin, LOW);
+  delay(__pause);  
 }
 
 void dash()
 {
-  digitalWrite(_pin_, HIGH);
-  delay(_longpause_);
-  digitalWrite(_pin_, LOW);
-  delay(_pause_);
+  digitalWrite(__pin, HIGH);
+  delay(__longpause);
+  digitalWrite(__pin, LOW);
+  delay(__pause);
 }
