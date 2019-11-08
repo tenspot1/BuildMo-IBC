@@ -7,7 +7,7 @@
 #include "Arduino.h"
 #include "IBC.h"
 
-morse_setup(13, 250, 1000);
+extern int __pin, __pause, __longpause;
 
 void dot()
 {
