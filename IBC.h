@@ -11,4 +11,7 @@
 
 #define morse_setup(_pin, _pause, _longpause) int _pin_ = _pin, _pause_ = _pause, _longpause_ = _longpause
 
+void dot(void);
+void dash(void);
+
 #endif
