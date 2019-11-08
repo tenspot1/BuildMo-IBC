@@ -7,24 +7,18 @@
 #include "Arduino.h"
 #include "IBC.h"
 
-Morse::Morse(int pin)
+void dot()
 {
-  pinMode(pin, OUTPUT);
-  _pin = pin;
+  digitalWrite(_pin_, HIGH);
+  delay(_pause_);
+  digitalWrite(_pin_, LOW);
+  delay(_pause_);  
 }
 
-void Morse::dot()
+void dash()
 {
-  digitalWrite(_pin, HIGH);
-  delay(250);
-  digitalWrite(_pin, LOW);
-  delay(250);  
-}
-
-void Morse::dash()
-{
-  digitalWrite(_pin, HIGH);
-  delay(1000);
-  digitalWrite(_pin, LOW);
-  delay(250);
+  digitalWrite(_pin_, HIGH);
+  delay(_longpause_);
+  digitalWrite(_pin_, LOW);
+  delay(_pause_);
 }
