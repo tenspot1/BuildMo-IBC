@@ -9,7 +9,7 @@
 
 #include "Arduino.h"
 
-#define morse_setup(_pin, _pause, _longpause) int _pin_ = _pin, _pause_ = _pause, _longpause_ = _longpause
+#define morse_setup(_pin, _pause, _longpause) int __pin = _pin, __pause = _pause, __longpause = _longpause
 
 void dot(void);
 void dash(void);
